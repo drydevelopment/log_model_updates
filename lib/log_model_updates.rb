@@ -19,7 +19,7 @@ module LogModelUpdates
       @row_updates = []
       update_type = (self.new_record? ? "insert" : "update")
       if update_type == "insert"
-          @row_updates << RowUpdate.new(  :user_id => @current_user,
+          @row_updates << RowUpdate.new(  :user_id => @current_user.id,
                                           :row_id => (self.id || nil),
                                           :update_type => update_type,
                                           :table_name => self.class.table_name.to_s )
