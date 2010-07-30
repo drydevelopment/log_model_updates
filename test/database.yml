@@ -1,0 +1,21 @@
+sqlite:
+  :adapter: sqlite
+  :database: log_model_updates_test
+
+sqlite3:
+  :adapter: sqlite3
+  :database: log_model_updates_test
+
+postgresql:
+  :adapter: postgresql
+  :username: postgres
+  :password: postgres
+  :database: log_model_updates_test
+  :min_messages: ERROR
+
+mysql:
+  :adapter: mysql
+  :host: localhost
+  :username: root
+  :password: password
+  :database: log_model_updates_test
